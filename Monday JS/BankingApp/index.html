@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form id="frm1">
+        First name: <input type="text" id="f-name"><br>
+        Last name: <input type="text" id="l-name"><br>
+        Middle name: <input type="text" id="m-name"></br>
+        Account: <select id="acc-type">
+            <option value="checking">Checking</option>
+            <option value="savings">Savings</option>
+            <option value="money-mkt">Money Market</option>
+        </select></br>
+        Starting Balance: <input type="text" id="i-balance"><br></br>
+        <input type="button" onclick="openAccount()" value="Submit">
+        <input type="button" onclick="reset()" value="Reset Form">
+        <button id="show" onclick="showAccount()"></button>
+    </form>
+    <fieldset id="acc-deets">
+        <legend>Account Details:</legend>
+        <p>Account #: <span id="acc-num"></span></p>
+        <p>Name: <span id="name"></span></p>
+        <p>Account Type: <span id="type"></span></p>
+        <p>Balance: <span id="bal"></span></p>
+        <p>Status: <span id="stat"></span></p>
+        <button onclick="account.initTransfer()">Transfer Funds</button>
+        <button onclick="account.withdraw()">Withdraw</button>
+        <button onclick="account.closeAccount()">Close Account</button>
+    </fieldset>
+    <form id="trans">
+        Transfer Amount: <input type="text" id="trans-amt"><br>
+        <select id="trans-acct">
+            <option id="acc1"></option>
+            <option id="acc2"></option>
+            <option id="acc3"></option>
+        </select>
+        <button onclick="account.transfer()">Transfer Funds</button>
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

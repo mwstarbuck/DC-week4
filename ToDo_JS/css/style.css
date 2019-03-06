@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+}
+.taskBox {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgb(53, 188, 241);
+    color: white;
+    margin: 10px;
+    box-shadow: 3px 5px 6px #ccc; 
+
+}
+.check {
+    margin-top: 18px;
+}
+.removeBtn {
+    padding-right: 10px;
+    color: darkslategray;
+}
+.removeBtn:hover {
+    color: rgb(53, 88, 88);
+}
+h3 {
+    color:  gray;
+    /* margin-left: 40%; */
+}
+#taskTextBox {
+    box-shadow: 1px 1px #ccc; 
+}
+#taskHolder, #completedHolder {
+    text-align: center;
+    border: solid 1px #ccc;
+    box-shadow: 1px 1px #ccc; 
+    margin: 10px;
+}
+#addButton {
+     box-shadow: 1px 1px 2px #ccc;    
+}
