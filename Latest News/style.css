@@ -1,0 +1,82 @@
+img {
+    width: 200px;
+    border: 1px solid gray;
+}
+#newsBox {
+    display: flex;
+    flex-direction: column;
+}
+#newsList {
+    list-style: none;
+}
+.bigBox {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 3px gray;
+}
+.bigStuff {
+    display: flex;
+    justify-content: center;
+    margin: 5px 5px 0px 0px;
+    
+
+}
+.imgBox {
+    margin: 5px 10px 0px 5px;
+    box-shadow: 1px 2px 2px gray;
+}
+/* .wordsBox {
+    width: 60%;
+    border-bottom: 2px solid lightgrey;
+} */
+.titleAuthorBox h3 {
+    margin: 0;
+    color: #8e4141;
+    font-size: 1.5em;
+}
+.titleAuthorBox p {
+    margin-bottom: 0;
+    color: gray;
+}
+
+.titleAuthorBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+li {
+    margin-bottom: 30px;
+}
+.descriptBox {
+    margin: 10px;
+    color: dimgray;
+}
+
+.sourceBox {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+}
+.sourceBox p {
+    margin: 10px;
+    padding-top: 5px;
+}
+.sourceBox a {
+    color: dimgray;
+    text-decoration: none;
+    margin: 10px;
+}
+.sourceBox a:hover {
+    text-decoration-line: underline;
+
+}
+.navbar-brand {
+    font-size: 2.2em;
+}
+#spanColor {
+color: white;
+}
+.background {
+    background-color: #983b3e;
+}
